@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jonim uchun ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="hearts" aria-hidden="true"></div>
+
+  <main class="page">
+    <header class="top">
+      <div class="heart-logo">♥</div>
+      <p class="small-title">FAQAT SEN UCHUN</p>
+      <h1>Jonim, bir nechta savolim bor... 💌</h1>
+      <p class="intro">Har bir savolga yuragingdan kelib chiqib javob ber. Oxirida esa senga alohida savolim bor ❤️</p>
+    </header>
+
+    <section class="card" id="startCard">
+      <div class="big-heart">❤</div>
+      <h2>Tayyormisan, jonim?</h2>
+      <p>Unda boshladik. Bu kichkina sahifa faqat sen uchun tayyorlandi.</p>
+      <button class="main-btn" id="startBtn">Boshlash 💖</button>
+    </section>
+
+    <section class="card quiz hidden" id="quizCard">
+      <div class="progress-line"><div id="progressFill"></div></div>
+      <p class="counter" id="counter">Savol 1 / 10</p>
+      <div class="question-heart">♥</div>
+      <h2 id="question">Sen qaysi gulni yoqtirasan?</h2>
+      <p class="hint" id="hint">O'zingga yoqqan javobni tanla 😊</p>
+      <div class="answers" id="answers"></div>
+      <p class="feedback" id="feedback" aria-live="polite"></p>
+      <button class="next-btn hidden" id="nextBtn">Keyingi savol →</button>
+    </section>
+
+    <section class="card final-card hidden" id="finalCard">
+      <div class="sticker" aria-label="Qimirlayotgan quvnoq stiker">
+        <span class="sticker-face">🥹</span>
+        <span class="sticker-heart">💗</span>
+      </div>
+      <div class="big-heart pulse">♥</div>
+      <p class="small-title">ENG MUHIM SAVOL</p>
+      <h2 id="finalQuestion">Jonim, menga turmushga chiqishga rozimisan? 💍</h2>
+      <p class="final-note">Qanday javob berishingdan qat'i nazar, sening fikring va tanloving men uchun muhim. ❤️</p>
+      <div class="answers final-answers">
+        <button class="answer-btn" id="yesBtn">Ha, roziman 💍</button>
+        <button class="answer-btn" id="thinkBtn">Bu haqda o'ylab ko'raylik 💗</button>
+      </div>
+      <p class="feedback" id="finalFeedback" aria-live="polite"></p>
+      <div class="waiting-box hidden" id="waitingBox">
+        <div class="clock-icon">⏳</div>
+        <h3>Vaqt ketmoqda...</h3>
+        <p>Men javobingni kutyapman 💗</p>
+        <div class="timer" id="timer">00:00:00</div>
+        <p class="timer-note">Soat javobni kutayotgan vaqtni sanayapti.</p>
+        <div class="waiting-sticker">🐻‍❄️💭</div>
+      </div>
+      <button class="restart-btn" id="restartBtn">Boshidan ko'rish ↺</button>
+    </section>
+
+    <footer>Mehr bilan tayyorlandi <span>♥</span></footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
